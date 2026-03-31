@@ -1,16 +1,12 @@
 "use client";
-/**
- * app/(auth)/login/page.js
- * Login page — Email/password + Google OAuth sign-in.
- */
-
+import { Suspense } from "react";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Eye, EyeOff, Loader2 } from "lucide-react";
 
-export default function LoginPage() {
+function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const callbackUrl = searchParams.get("callbackUrl") || "/dashboard";
@@ -51,17 +47,12 @@ export default function LoginPage() {
       <h1 className="text-2xl font-bold text-gray-900 mb-1">Welcome back</h1>
       <p className="text-gray-500 text-sm mb-8">Sign in to your Schedulo account</p>
 
-      {/* Google OAuth */}
       <button
         onClick={handleGoogle}
         disabled={googleLoading}
         className="w-full flex items-center justify-center gap-3 border border-gray-300 rounded-lg py-2.5 px-4 text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors disabled:opacity-60"
       >
-        {googleLoading ? (
-          <Loader2 className="w-4 h-4 animate-spin" />
-        ) : (
-          <GoogleIcon />
-        )}
+        {googleLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <GoogleIcon />}
         Continue with Google
       </button>
 
@@ -74,7 +65,6 @@ export default function LoginPage() {
         </div>
       </div>
 
-      {/* Credentials form */}
       <form onSubmit={handleSubmit} className="space-y-4">
         {error && (
           <div className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-lg px-4 py-3">
@@ -130,6 +120,14 @@ export default function LoginPage() {
         </Link>
       </p>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={<div className="card p-8 animate-pulse h-96" />}>
+      <LoginForm />
+    </Suspense>
   );
 }
 

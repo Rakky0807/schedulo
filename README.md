@@ -4,14 +4,13 @@
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
-> **Deploy URL:** _(Add after deploying to Vercel)_
-> **Sample booking page:** `/demo/30min`
+> **Deploy URL:** https://schedulo-xq6j-three.vercel.app
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 1. [Tech Stack & Justification](#tech-stack)
 2. [Features](#features)
@@ -43,7 +42,7 @@
 
 ---
 
-## ✨ Features <a name="features"></a>
+##  Features <a name="features"></a>
 
 ### Core
 - **User Registration & Authentication** — Email/password (bcrypt) + Google OAuth
@@ -65,7 +64,7 @@
 
 ---
 
-## 📁 Project Structure <a name="project-structure"></a>
+##  Project Structure <a name="project-structure"></a>
 
 ```
 schedulo/
@@ -122,7 +121,7 @@ schedulo/
 
 ---
 
-## ⚡ Quick Start (Local) <a name="quick-start"></a>
+##  Quick Start (Local) <a name="quick-start"></a>
 
 ### Prerequisites
 - Node.js 18+
@@ -153,7 +152,7 @@ npm run dev
 
 ---
 
-## 🔑 Environment Variables <a name="environment-variables"></a>
+##  Environment Variables <a name="environment-variables"></a>
 
 ```bash
 # App URL (change to your domain in production)
@@ -194,7 +193,7 @@ EMAIL_FROM=Schedulo <you@gmail.com>
 
 ---
 
-## 🚢 Deployment (Vercel) <a name="deployment"></a>
+##  Deployment (Vercel) <a name="deployment"></a>
 
 ```bash
 # Install Vercel CLI
@@ -250,7 +249,7 @@ Each booking gets a cryptographically random 64-char hex `cancelToken`. Cancel l
 
 ---
 
-## 🤖 AI Feature — Gemini Flash <a name="ai-feature"></a>
+##  AI Feature — Gemini Flash <a name="ai-feature"></a>
 
 The **Smart Scheduling Assistant** is embedded on every public booking page.
 
@@ -269,7 +268,7 @@ The **Smart Scheduling Assistant** is embedded on every public booking page.
 
 ---
 
-## 🛠️ Tools Used <a name="tools-used"></a>
+##  Tools Used <a name="tools-used"></a>
 
 | Tool | Usage |
 |---|---|
@@ -283,7 +282,7 @@ The **Smart Scheduling Assistant** is embedded on every public booking page.
 
 ---
 
-## 📝 Assumptions & Trade-offs <a name="assumptions"></a>
+##  Assumptions & Trade-offs <a name="assumptions"></a>
 
 **Assumptions:**
 - One availability schedule per user (not per event type). This is simpler and matches Calendly's default behaviour.
@@ -300,6 +299,6 @@ The **Smart Scheduling Assistant** is embedded on every public booking page.
 
 ---
 
-## 📄 License
+##  License
 
 MIT — free to use, modify, and deploy.

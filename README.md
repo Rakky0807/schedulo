@@ -4,6 +4,9 @@
 
 ---
 
+<img width="1911" height="898" alt="Screenshot 2026-03-31 230448" src="https://github.com/user-attachments/assets/34b0240f-3a2c-44f2-bee0-5a12efa4973c" />
+
+
 ##  Live Demo
 
 > **Deploy URL:** https://schedulo-xq6j-three.vercel.app
@@ -63,6 +66,15 @@
 - **Free** — Uses `gemini-1.5-flash` via REST API at `aistudio.google.com`. No billing needed.
 
 ---
+
+<img width="1894" height="905" alt="Screenshot 2026-03-31 230526" src="https://github.com/user-attachments/assets/532d84fc-9718-46e7-92e9-9d1462757c80" />
+
+<img width="1192" height="686" alt="Screenshot 2026-03-31 230412" src="https://github.com/user-attachments/assets/38e7007e-83ab-4a12-81cf-31049a09f03a" />
+
+<img width="1194" height="702" alt="Screenshot 2026-03-31 230429" src="https://github.com/user-attachments/assets/61d43e00-1f41-42c3-88cb-3d3640a85405" />
+
+<img width="1514" height="625" alt="Screenshot 2026-03-31 231440" src="https://github.com/user-attachments/assets/04a095fc-759b-465f-bb84-1fbb1ec38d11" />
+
 
 ##  Project Structure <a name="project-structure"></a>
 
